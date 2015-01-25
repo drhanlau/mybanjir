@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mybanjir">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>#mybanjir</title>
+    <link rel="stylesheet" href="application.css">
+    <script src="packages/jquery/dist/jquery.min.js"></script>
+    <script src="packages/angular-full/angular.min.js"></script>
+    <script src="packages/angular-full/angular-route.min.js"></script>
+    <script src="packages/angular-disqus/angular-disqus.min.js"></script>
+    <script src="packages/angular-cache/dist/angular-cache.min.js"></script>
+    <script src="packages/angular-chartjs/src/tc-angular-chartjs.js"></script>
+    <script src="packages/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="packages/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="packages/moment/min/moment.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <!-- <script src="http://code.highcharts.com/modules/exporting.js"></script> -->
+    <script src="meteogram.js"></script>
+    <script src="application.js"></script>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <header>
+            <div class="row">
+                <div class="col-md-8">
+                    <a href="#!/feeds">
+                        <img class="header-logo" src="logo-header.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 text-center hidden-xs hidden-sm">
+                    <a target="blank" href="http://portalbencana.mkn.gov.my"><img class="mkn-banner" src="mkn-banner.jpg" alt=""></a>
+                </div>
+            </div>
+        </header>
+        <br>
+        <div class="row">
+            <div class="col-md-8" ng-view="" id="feeds"></div>
+            <div class="col-md-4">
+                <ul class="list-group sidelinks lead text-center">
+                    <li class="list-group-item active">Info Banjir</i></li>
+                    <li class="list-group-item">
+                        <a href="#!/dropoffpoints">Drop Off Points</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#!/riverlevels">River Levels</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#!/weatherforecasts">Weather Forecast</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#!/floodedroads">Flood Affected Roads</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#!/frequencies">Amateur Radio Repeaters</a>
+                    </li>
+                    <!-- <li class="list-group-item">
+                        <a href="#!/insta">#mybanjir Instagram</a>
+                    </li> -->
+                </ul>
+                <ul class="list-group sidelinks lead text-center">
+                    <li class="list-group-item active"><i class="glyphicon glyphicon-new-window"></i> External Links </li>
+                    <li class="list-group-item">
+                        <a target="blank" href="https://docs.google.com/a/mymagic.com.my/spreadsheets/d/19uN4XUTCabYtvMkPYxRcKKD-ByGMLwwXP6l5ON2XFVg/edit?usp=sharing">Relief Agencies</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a target="blank" href="http://sms13999.skmm.gov.my/info.aspx">SMS Donation @ Tabung SKMM</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a target="blank" href="http://bit.ly/banjirmy">Crowdfunding Donation Campaign</a>
+                    </li>
+                </ul>
+                
+                <br>
+                <div class="panel panel-primary">
+                    <div class="panel-heading text-center">SMS Service</div>
+                    <div class="panel-body text-justified">This is a community service by mybanjir.com together with Celcom where we are trying to send SMS to the flood victims and the search and rescue team in order to determine the current situation and location. We hope that you could give us the right information for us to disseminate via SMS.
+                        <br>
+                        <br>
+                        Ini adalah khidmat komuniti oleh mybanjir.com dengan Celcom dimana kami akan mencuba untuk menghantar SMS kepada mangsa dan juga pasukan penyelamat untuk mengenal pasti keadaan dan lokasi mereka. Kami berharap tuan/puan dapat memberikan maklumat yang tepat untuk kami sebarkan.
+                        <br>
+                        <br>
+                        <div class="text-center">
+                            <a href="http://goo.gl/forms/h0bSdG4X25" class="btn btn-success" target="blank">SMS Form <i class="glyphicon glyphicon-new-window"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a class="twitter-timeline" href="https://twitter.com/hashtag/mybanjir" data-widget-id="547771639031545857">#mybanjir Tweets</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container text-center">
+            A <img src="logo.png" alt=""> community project.
+        </div>
+    </footer>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-57984541-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body>
+</html>

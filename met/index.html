@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<title>Cuaca</title>
+		<style>
+			h3.capitalize{text-transform:capitalize;}
+			table.table{
+				border:1px solid;
+				width:100%;
+			}
+			table.table th{
+				border:1px solid;
+				width:100%;
+			}
+			table.table td{
+				border:1px solid;
+				width:100%;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$("#states").change(function(){
+				var state = $("#states").val();
+				var html = '';
+				$("#info").empty();
+				
+				if(state != 'none')
+				{
+					$.ajax({
+					'url': 'met.php?states='+state,
+					'type': 'get',
+					'dataType': 'json',
+					'success' : function(data) {
+						$.each(data,function(idx,dx) {
+							html+='<h3 class="capitalize">'+idx+'<br />(Latitude : '+dx.latitude+',Longitude: '+dx.longitude+')</h3>';
+							html+='<table class="table"><thead><tr><th>Day</th><th width="10%">Morning</th><th width="10%">Afternoon</th><th width="10%">Night</th><th width="10%">Min Temp</th><th width="10%">Max Temp</th></tr></thead>';
+							html+='<tbody>'
+							$.each(dx.results,function(key,object){
+								html+='<tr>';
+								html+='<td>'+object.day+'</td>';
+								html+='<td>'+object.morning+'</td>';
+								html+='<td>'+object.afternoon+'</td>';
+								html+='<td>'+object.night+'</td>';
+								html+='<td>'+object.min_temp+'</td>';
+								html+='<td>'+object.max_temp+'</td>';
+							});
+							
+							html+='</tbody></table>';
+							
+						});
+						
+						$("#info").html(html);
+						
+						}
+					});
+				}
+			})
+			
+		})
+		
+		</script>
+	</head>
+	<body>
+		<form id="metForm">
+			<select name="states" id="states">
+				<option value="none">Please Choose</option>
+				<option value="johor">Johor</option>
+				<option value="kedah">Kedah</option>
+				<option value="kuala%20lumpur">Kuala Lumpur</option>
+				<option value="kelantan">Kelantan</option>
+				<option value="labuan">Labuan</option>
+				<option value="melaka">Melaka</option>
+				<option value="negeri%20sembilan">Negeri Sembilan</option>
+				<option value="pahang">Pahang</option>
+				<option value="perak">Perak</option>
+				<option value="perlis">Perlis</option>
+				<option value="pulau%20pinang">Pulau Pinang</option>
+				<option value="sabah">Sabah</option>
+				<option value="sarawak">Sarawak</option>
+				<option value="selangor">Selangor</option>
+			</select>
+		</form>
+		<div id="info">
+		</div>
+	</body>
+</html> 

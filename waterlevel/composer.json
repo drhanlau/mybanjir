@@ -1,0 +1,11 @@
+{
+    "require": {
+        "slim/slim": "2.*",
+        "illuminate/database": "*",
+        "sunra/php-simple-html-dom-parser": "v1.5.0"
+    },
+    "autoload": {
+        "files": [ "app/config.php" ],
+        "classmap": [ "app/models" ]
+    }
+}

@@ -1,0 +1,351 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "79457f0216e0e18fa9f17c55ca876ca7",
+    "packages": [
+        {
+            "name": "illuminate/container",
+            "version": "v4.2.16",
+            "target-dir": "Illuminate/Container",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/container.git",
+                "reference": "8db091c1b4e503ef8dcd4586d5c63e3997bc4e89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/8db091c1b4e503ef8dcd4586d5c63e3997bc4e89",
+                "reference": "8db091c1b4e503ef8dcd4586d5c63e3997bc4e89",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Container": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "time": "2014-12-17 20:39:51"
+        },
+        {
+            "name": "illuminate/database",
+            "version": "v4.2.16",
+            "target-dir": "Illuminate/Database",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/database.git",
+                "reference": "5d07587a51b13224cdda6417fbc25e9c13d276c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/5d07587a51b13224cdda6417fbc25e9c13d276c9",
+                "reference": "5d07587a51b13224cdda6417fbc25e9c13d276c9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": "4.2.*",
+                "illuminate/events": "4.2.*",
+                "illuminate/support": "4.2.*",
+                "nesbot/carbon": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/cache": "4.2.*",
+                "illuminate/console": "4.2.*",
+                "illuminate/filesystem": "4.2.*",
+                "illuminate/pagination": "4.2.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Database": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "keywords": [
+                "database",
+                "laravel",
+                "orm",
+                "sql"
+            ],
+            "time": "2014-12-22 20:55:49"
+        },
+        {
+            "name": "illuminate/events",
+            "version": "v4.2.16",
+            "target-dir": "Illuminate/Events",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/events.git",
+                "reference": "a8471d3f6c3e87c50e25e18f13908fffaef159df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/events/zipball/a8471d3f6c3e87c50e25e18f13908fffaef159df",
+                "reference": "a8471d3f6c3e87c50e25e18f13908fffaef159df",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": "4.2.*",
+                "illuminate/support": "4.2.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Events": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "time": "2014-10-02 19:49:50"
+        },
+        {
+            "name": "illuminate/support",
+            "version": "v4.2.16",
+            "target-dir": "Illuminate/Support",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/support.git",
+                "reference": "015f51f4d8cb3d9a29e7fe7932843acf15232941"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/015f51f4d8cb3d9a29e7fe7932843acf15232941",
+                "reference": "015f51f4d8cb3d9a29e7fe7932843acf15232941",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "jeremeamia/superclosure": "~1.0.1",
+                "patchwork/utf8": "1.1.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Support": ""
+                },
+                "files": [
+                    "Illuminate/Support/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "time": "2014-12-19 18:02:33"
+        },
+        {
+            "name": "nesbot/carbon",
+            "version": "1.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/briannesbitt/Carbon.git",
+                "reference": "5cb6e71055f7b0b57956b73d324cc4de31278f42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/5cb6e71055f7b0b57956b73d324cc4de31278f42",
+                "reference": "5cb6e71055f7b0b57956b73d324cc4de31278f42",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Carbon": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Nesbitt",
+                    "email": "brian@nesbot.com",
+                    "homepage": "http://nesbot.com"
+                }
+            ],
+            "description": "A simple API extension for DateTime.",
+            "homepage": "https://github.com/briannesbitt/Carbon",
+            "keywords": [
+                "date",
+                "datetime",
+                "time"
+            ],
+            "time": "2014-09-26 02:52:02"
+        },
+        {
+            "name": "slim/slim",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codeguy/Slim.git",
+                "reference": "04958a10ed95bc7bc97568e573877d4f9b62db48"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codeguy/Slim/zipball/04958a10ed95bc7bc97568e573877d4f9b62db48",
+                "reference": "04958a10ed95bc7bc97568e573877d4f9b62db48",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "ext-mcrypt": "Required for HTTP cookie encryption"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Slim": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Lockhart",
+                    "email": "info@joshlockhart.com",
+                    "homepage": "http://www.joshlockhart.com/"
+                }
+            ],
+            "description": "Slim Framework, a PHP micro framework",
+            "homepage": "http://github.com/codeguy/Slim",
+            "keywords": [
+                "microframework",
+                "rest",
+                "router"
+            ],
+            "time": "2014-12-09 19:59:29"
+        },
+        {
+            "name": "sunra/php-simple-html-dom-parser",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunra/php-simple-html-dom-parser.git",
+                "reference": "a0b80ace086c7e09085669205e1b3c2c9c7a453c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunra/php-simple-html-dom-parser/zipball/a0b80ace086c7e09085669205e1b3c2c9c7a453c",
+                "reference": "a0b80ace086c7e09085669205e1b3c2c9c7a453c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sunra\\PhpSimple\\HtmlDomParser": "Src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sunra",
+                    "email": "sunra@yandex.ru",
+                    "homepage": "http://github.com/sunra"
+                }
+            ],
+            "description": "Composer adaptation of: A HTML DOM parser written in PHP5+ let you manipulate HTML in a very easy way! Require PHP 5+. Supports invalid HTML. Find tags on an HTML page with selectors just like jQuery. Extract contents from HTML in a single line.",
+            "homepage": "https://github.com/sunra/php-simple-html-dom-parser",
+            "keywords": [
+                "dom",
+                "html",
+                "parser"
+            ],
+            "time": "2013-05-04 14:32:03"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ],
+    "prefer-stable": false,
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

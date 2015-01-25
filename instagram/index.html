@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>#mybanjir</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="path/to/instafeed.min.js"></script>
+<script type="text/javascript">
+    var num = 60;
+	var feed = new Instafeed({
+   /*get: 'user',*/
+   get: 'tagged',
+   tagName: 'mybanjir',
+   /*clientId: '5ca96cc2bf024bf9a4772f5401ab6b6f',*/
+	userId: 3614616,
+	accessToken: '3614616.467ede5.abc0b5a861d34365a5c8dd8db0163c4b',
+	limit:"100",
+	resolution : "low_resolution",
+	after: function () {
+    var images = $("#instafeed").find('a');
+    $.each(images, function(index, image) {
+      var delay = (index * 75) + 'ms';
+      $(image).css('-webkit-animation-delay', delay);
+      $(image).css('-moz-animation-delay', delay);
+      $(image).css('-ms-animation-delay', delay);
+      $(image).css('-o-animation-delay', delay);
+      $(image).css('animation-delay', delay);
+      $(image).addClass('animated flipInX');
+    });
+  },
+  template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div>a>'
+});
+
+feed.run();
+
+
+$(window).scroll(function() {
+   if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+      feed.next();
+   }
+});
+</script>
+
+
+</head>
+
+<body>
+<center id="holder">
+	<p>#mybanjir</p>
+    <div id="instafeed"></div>
+    <div onClick="loadpic()">LOAD MORE</div>
+</center>
+</body>
+</html>
